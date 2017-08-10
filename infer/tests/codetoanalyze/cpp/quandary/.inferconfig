@@ -1,0 +1,77 @@
+{
+  "quandary-sources": [
+    {
+      "procedure": "__infer_taint_source",
+      "kind": "Other"
+    },
+    {
+      "procedure": "basics::Obj::method_source",
+      "kind": "Other"
+    },
+    {
+      "procedure": "basics::Obj::static_source",
+      "kind": "Other"
+    },
+    {
+      "procedure": "basics::template_source",
+      "kind": "Other"
+    },
+    {
+      "procedure": "basics::Obj::string_source",
+      "kind": "Other"
+    },
+    {
+      "procedure": "basics::Obj::taint_arg_source",
+      "kind": "Other",
+      "index": "0"
+    },
+    {
+      "procedure": "allocs::allocation_source",
+      "kind": "EnvironmentVariable"
+    }
+  ],
+  "quandary-sinks": [
+    {
+      "procedure": "__infer_taint_sink",
+      "kind": "Other",
+      "index": "0"
+    },
+    {
+      "procedure": "__infer_sql_sink",
+      "kind": "SQL",
+      "index": "all"
+    },
+    {
+      "procedure": "basics::Obj::method_sink",
+      "kind": "Other",
+      "index": "1"
+    },
+    {
+      "procedure": "basics::Obj::static_sink",
+      "kind": "Other",
+      "index": "0"
+    },
+    {
+      "procedure": "basics::template_sink",
+      "kind": "Other",
+      "index": "0"
+    },
+    {
+      "procedure": "basics::Obj::string_sink",
+      "kind": "Other",
+      "index": "1"
+    }
+  ],
+  "quandary-sanitizers": [
+    {
+      "procedure": "basics::Obj::sanitizer1"
+    },
+    {
+      "procedure": "basics::Obj::sanitizer2"
+    }
+  ],
+  "quandary-endpoints": [
+    "basics::Obj::endpoint",
+    "execs::Obj::endpoint"
+  ]
+}
